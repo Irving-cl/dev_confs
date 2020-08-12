@@ -11,7 +11,11 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'craigemery/vim-autotag'
+Plugin 'scrooloose/nerdtree'
 Plugin 'Majutsushi/tagbar'
+
+"Color scheme
+Plugin 'NLKNguyen/papercolor-theme'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -37,4 +41,9 @@ set autoindent
 set expandtab
 set shiftwidth=4
 set nu
+
+"Color scheme
+set t_Co=256
+set background=dark
+colorscheme PaperColor
 
