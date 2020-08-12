@@ -33,3 +33,8 @@ let g:tagbar_autoclose = 0    " Don't close tagbar after jump to the tag selecte
 nnoremap <silent> <F1> :TagbarToggle<CR>
 
 " Non-Plugin stuff
+set autoindent
+set expandtab
+set shiftwidth=4
+set nu
+
