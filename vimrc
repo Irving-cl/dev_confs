@@ -45,6 +45,13 @@ set nu
 let g:tagbar_autoclose = 0    " Don't close tagbar after jump to the tag selected in the tag window
 nnoremap <silent> <F1> :TagbarToggle<CR>
 
+" nerdtree
+" Usage:
+" <leader>ndT : Toggle NERDTre
+let NERDTreeShowHidden=1         " Display hidden files by default.
+let NERDTreeShowLineNumbers=1    " Display line numbers for the NERDTree.
+noremap <leader>ndT :NERDTreeToggle<CR>
+
 "Color scheme
 set t_Co=256
 set background=dark
