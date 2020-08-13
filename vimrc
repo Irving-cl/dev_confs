@@ -30,17 +30,20 @@ filetype plugin indent on    " required
 " :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
 "
 
-" tagbar
-" Usage:
-" <F1> Toggle tagbar
-let g:tagbar_autoclose = 0    " Don't close tagbar after jump to the tag selected in the tag window
-nnoremap <silent> <F1> :TagbarToggle<CR>
+" Leader key
+let mapleader = ","
 
 " Non-Plugin stuff
 set autoindent
 set expandtab
 set shiftwidth=4
 set nu
+
+" tagbar
+" Usage:
+" <F1> Toggle tagbar
+let g:tagbar_autoclose = 0    " Don't close tagbar after jump to the tag selected in the tag window
+nnoremap <silent> <F1> :TagbarToggle<CR>
 
 "Color scheme
 set t_Co=256
