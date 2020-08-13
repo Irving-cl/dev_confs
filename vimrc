@@ -11,6 +11,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'craigemery/vim-autotag'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Majutsushi/tagbar'
 
@@ -45,11 +46,14 @@ set nu
 let g:tagbar_autoclose = 0    " Don't close tagbar after jump to the tag selected in the tag window
 nnoremap <silent> <F1> :TagbarToggle<CR>
 
+" ctrlp
+let g:ctrlp_regexp = 0    " Don't use regexp search by default
+
 " nerdtree
 " Usage:
 " <leader>ndT : Toggle NERDTre
-let NERDTreeShowHidden=1         " Display hidden files by default.
-let NERDTreeShowLineNumbers=1    " Display line numbers for the NERDTree.
+let NERDTreeShowHidden=1         " Display hidden files by default
+let NERDTreeShowLineNumbers=1    " Display line numbers for the NERDTree
 noremap <leader>ndT :NERDTreeToggle<CR>
 
 "Color scheme
