@@ -12,6 +12,7 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'craigemery/vim-autotag'
 Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'preservim/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Majutsushi/tagbar'
 
@@ -51,7 +52,7 @@ let g:ctrlp_regexp = 0    " Don't use regexp search by default
 
 " nerdtree
 " Usage:
-" <leader>ndT : Toggle NERDTre
+" <leader>ndT : Toggle NERDTree
 let NERDTreeShowHidden=1         " Display hidden files by default
 let NERDTreeShowLineNumbers=1    " Display line numbers for the NERDTree
 noremap <leader>ndT :NERDTreeToggle<CR>
