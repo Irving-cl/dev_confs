@@ -14,6 +14,8 @@ Plugin 'craigemery/vim-autotag'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'preservim/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'Majutsushi/tagbar'
 
 "Color scheme
