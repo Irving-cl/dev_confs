@@ -12,6 +12,7 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'craigemery/vim-autotag'
 Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'fholgado/minibufexpl.vim'
 Plugin 'preservim/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
 Plugin 'vim-airline/vim-airline'
@@ -35,7 +36,7 @@ filetype plugin indent on    " required
 "
 
 " Leader key
-let mapleader = ","
+let mapleader=","
 
 " Non-Plugin stuff
 set autoindent
@@ -46,21 +47,31 @@ set nu
 " tagbar
 " Usage:
 " <F1> Toggle tagbar
-let g:tagbar_autoclose = 0    " Don't close tagbar after jump to the tag selected in the tag window
+let g:tagbar_autoclose=0    " Don't close tagbar after jump to the tag selected in the tag window
 nnoremap <silent> <F1> :TagbarToggle<CR>
 
+" minibufexpl
+" Usage:
+" <leader>mbt : Toogle minibufexpl
+let g:miniBufExplBuffersNeeded=0
+noremap <leader>mbt :MBEToggle<CR>
+
 " ctrlp
-let g:ctrlp_regexp = 0    " Don't use regexp search by default
+let g:ctrlp_regexp=0    " Don't use regexp search by default
 
 " nerdtree
 " Usage:
-" <leader>ndT : Toggle NERDTree
+" <leader>ndt : Toggle NERDTree
 let NERDTreeShowHidden=1         " Display hidden files by default
 let NERDTreeShowLineNumbers=1    " Display line numbers for the NERDTree
-noremap <leader>ndT :NERDTreeToggle<CR>
+noremap <leader>ndt :NERDTreeToggle<CR>
 
 "Color scheme
 set t_Co=256
 set background=dark
 colorscheme PaperColor
+
+" misc
+" switch buffers
+noremap <tab> :bn<CR>
 
