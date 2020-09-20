@@ -68,6 +68,9 @@ let NERDTreeShowHidden=1         " Display hidden files by default
 let NERDTreeShowLineNumbers=1    " Display line numbers for the NERDTree
 noremap <leader>ndt :NERDTreeToggle<CR>
 
+" vim-fugitive
+command -nargs=+ Ggr execute 'silent Ggrep!' <q-args> | cw | redraw!  " For git grep
+
 "Color scheme
 set t_Co=256
 set background=dark
