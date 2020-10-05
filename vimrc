@@ -50,6 +50,7 @@ set nu
 " Usage:
 " <F1> Toggle tagbar
 let g:tagbar_autoclose=0    " Don't close tagbar after jump to the tag selected in the tag window
+let g:tagbar_position='left'
 nnoremap <silent> <F1> :TagbarToggle<CR>
 
 " minibufexpl
