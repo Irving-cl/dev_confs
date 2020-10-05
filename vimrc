@@ -79,4 +79,5 @@ colorscheme PaperColor
 " misc
 " switch buffers
 noremap <tab> :bn<CR>
+noremap <S-Tab> :bp<CR>
 
