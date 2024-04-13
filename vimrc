@@ -82,3 +82,5 @@ colorscheme PaperColor
 noremap <tab> :bn<CR>
 noremap <S-Tab> :bp<CR>
 
+" syntax on
+syntax on
